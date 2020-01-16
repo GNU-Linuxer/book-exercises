@@ -35,7 +35,8 @@ cos_wave <- cos(x_range)
 # Create a vector `wave` by multiplying `sin_wave` and `cos_wave` together, then
 # adding `sin_wave` to the product
 wave <- sin_wave*cos_wave
-wave <- sin_wave*wave
+wave <- sin_wave+wave
 
 # Use the `plot()` function to plot your `wave`!
 plot(wave)
+
