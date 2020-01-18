@@ -16,7 +16,7 @@ ten <- add_three(7)
 # The function should return the equivalent length in meters
 imperial_to_metric <- function(Feet,Inch)
 {
-  return((Feet*0.3048)+(Inch*0.0254))
+  return((Feet*0.3048)+(Inch*0.0254)) # return the length in meters
 }
 
 # Create a variable `height_in_meters` by passing your height in imperial to the
