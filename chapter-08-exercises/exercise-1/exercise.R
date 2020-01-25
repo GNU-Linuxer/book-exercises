@@ -19,6 +19,7 @@ dinner <- meals$dinner
 
 # Use double-bracket notation to extract your `lunch` element from your list
 # and save it in your list as the element at index 5 (no reason beyond practice)
+# Note: the meals[[4]] is empty!
 meals[[5]] <- meals[["lunch"]]
 
 # Use single-bracket notation to extract your breakfast and lunch from your list
