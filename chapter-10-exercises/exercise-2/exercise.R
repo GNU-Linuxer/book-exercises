@@ -53,6 +53,8 @@ largest_decrease_employee <- salaries[salaries$salary_adjustments==largest_decre
 average_change <- mean(salaries$salary_adjustments)
 
 # For people who did not get a raise, how much money did they lose on average? (note: this is the most difficult task)
+# One method: list all employees (use the row index number) whose salary is reduced and average their pay cuts
+# Another one method: extract all negative salary raise (the numerical value) and average them
 average_decreae <- mean(salaries$salary_adjustments[salaries$salary_adjustments <= 0])
 
 ## Consider: do the above averages match what you expected them to be based on 

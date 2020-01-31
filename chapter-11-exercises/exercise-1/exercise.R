@@ -1,7 +1,7 @@
 # Exercise 1: working with data frames (review)
 
-# Install devtools package: allows installations from GitHub
-install.packages("devtools")
+# Install devtools package: allows installations from GitHub (only need to do it once)
+# install.packages("devtools")
 
 # Install "fueleconomy" dataset from GitHub
 devtools::install_github("hadley/fueleconomy")
@@ -58,3 +58,4 @@ most_efficient <- function(year_choice, make_choice)
 
 # What was the most efficient Honda model of 1995?
 X1995_most_efficient_Honda <- most_efficient(1995, "Honda")
+print(X1995_most_efficient_Honda)
