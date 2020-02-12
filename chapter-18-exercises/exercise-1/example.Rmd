@@ -1,0 +1,47 @@
+---
+title: "R Markdown Demo"
+author: "John Doe"
+date: "2/11/2020"
+output: html_document
+---
+
+```{r setup, echo=FALSE}
+library(knitr)
+```
+
+## This is my report!
+
+I like writing **reports**
+
+## Code
+
+This is the code we will look at in class. This is just plain old Markdown that lets you render text in **bold** or _italics_. However, you can put in a block of R code, and the document will show the code and the results!
+
+```{r code_title_one, echo = FALSE}
+number <- runif(1:100)
+hist(number)
+numbers_mean <- mean(number)  # save the mean 
+img_url <- "https://airbus-h.assetsadobe2.com/is/image/content/dam/products-and-solutions/commercial-aircraft/a350-family/a350-1000/A350-1000_Iquluit_cold_test_-_aurora_borealis.jpg"
+
+img_markdown <- paste0("![](", img_url, ")")
+```
+
+The mean of the above histogram is **`r numbers_mean`**
+
+```{r other_chunk}
+print("Hello World")
+```
+
+## Cool Picture
+`r img_markdown`
+
+
+## Use Kable to create a table
+```{r kable_example, echo=FALSE} 
+# make a data frame 
+letters <- c("a", "b", "c", "d") 
+numbers <- 1:4 
+df <- data.frame(letters = letters, numbers = numbers)
+# "return" the table to render it 
+kable(df) 
+```
