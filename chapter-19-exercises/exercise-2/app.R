@@ -19,10 +19,10 @@ my_ui <- fluidPage(
   
   # A second `numericInput()` widget with the label "Quantity"
   # It should have a default value of 1 and a minimum value of 1  
-  numericInput(inputId = "quantity", label = "Quantity", min = 0, value = 0),
+  numericInput(inputId = "quantity", label = "Quantity", min = 1, value = 1),
   
   # The word "Cost", strongly bolded
-  strong("Cost"),
+  p(strong("Cost")),
   
   # A `textOutput()` output of a calculated value labeled `cost`
   textOutput(outputId = "cost")
@@ -36,7 +36,7 @@ my_server <- function(input, output) {
   # The reactive expression should return the input `price` times the `quantity`
   # So it looks nice, paste a "$" in front of it!
   output$cost <- renderText({
-    return(input$price * input$quantity)
+    return(paste0("$",input$price * input$quantity))
   })
 
 }
