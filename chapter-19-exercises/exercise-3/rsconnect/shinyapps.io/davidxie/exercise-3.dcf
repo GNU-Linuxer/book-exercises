@@ -1,0 +1,13 @@
+name: exercise-3
+title: exercise-3
+username:
+account: davidxie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1903213
+bundleId: 2851586
+url: https://davidxie.shinyapps.io/exercise-3/
+when: 1583352505.15421
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|img/example.png
